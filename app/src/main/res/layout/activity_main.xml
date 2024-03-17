@@ -10,11 +10,40 @@
         android:layout_width="match_parent"
         android:layout_height="70dp"
         android:background="#448AFF" />
-    <View
+
+    <TextView
+        android:layout_width="352dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="25dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="#ff5555"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:shadowDx="5"
+        android:shadowDy="5"
+        android:shadowRadius="5"
+        android:text="@string/res_text" />
+
+    <Button
+        android:id="@+id/button_toast"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:onClick="onClickToast"
+        android:enabled="true"
+        android:text="Пууууск!" />
+
+    <ImageView
         android:layout_width="300dp"
-        android:layout_height="500dp"
+        android:layout_height="250dp"
         android:layout_marginStart="50dp"
         android:layout_marginTop="50dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/cosmos"
         android:background="#FFAB40" />
 
     <FrameLayout
